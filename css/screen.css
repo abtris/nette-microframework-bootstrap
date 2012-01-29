@@ -1,0 +1,33 @@
+html {
+	font: 16px/1.5 "Trebuchet MS", "Geneva CE", lucida, sans-serif;
+	border-top: 4.7em solid #F4EBDB;
+}
+
+body {
+	max-width: 990px;
+	margin: -4.7em auto 0;
+	background: white;
+	color: #333;
+}
+
+h1 {
+	font: 1.9em/1.5 sans-serif;
+	margin: .5em 0 1.5em;
+	color: #7A7772;
+	text-shadow: 1px 1px 0 white;
+}
+
+h2 {
+	font-size: 120%;
+	color: #3484D2;
+}
+
+#content {
+	width: 770px;
+	margin: 0 auto;
+}
+
+footer {
+	text-align:center;
+}
+

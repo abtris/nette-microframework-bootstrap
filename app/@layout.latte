@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Nette; http://nette.org">
+
+    <title>{block title|striptags|trim}Nette.org{/block}</title>
+
+    <link rel="stylesheet" media="screen,projection,tv" href="css/screen.css" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="http://fonts.googleapis.com/css?family=Bree+Serif&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="canonical" href="{$context->httpResponse->headers[Content-Location]}" n:ifset="$context->httpResponse->headers[Content-Location]">
+
+</head>
+
+<body>
+	<h1>Site name</h1>
+    {include #content}
+
+    <script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    <!--
+        var pageTracker = _gat._getTracker("UA-XXXXX");
+        pageTracker._initData();
+        pageTracker._trackPageview();
+    -->
+    </script>
+</body>
+</html>

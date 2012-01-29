@@ -1,0 +1,8 @@
+common:
+    php:
+        date.timezone: Europe/Prague
+
+production < common:
+
+development < common:
+
