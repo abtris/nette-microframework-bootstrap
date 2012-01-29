@@ -23,19 +23,9 @@ $container = $configurator->createContainer();
 
 
 // Setup router
-// http://davidgrudl.com/[cs|en]
-$container->router[] = new Route('[<lang (?-i)defaul|en>]', function($presenter, $lang) use ($container) {
-    if (!$lang) {
-        $lang = $container->httpRequest->detectLanguage(array('en', 'cs')) ?: 'cs';
-        return $presenter->redirectUrl($lang);
-    }
+// http://website/default
+$container->router[] = new Route('/', function($presenter) {
 
-    return $presenter->createTemplate()
-        ->setFile(__DIR__ . '/app/' . $lang . '.latte');
-});
-
-// http://davidgrudl.com/sources
-$container->router[] = new Route('default', function($presenter) {
     return $presenter->createTemplate()
         ->setFile(__DIR__ . '/app/default.latte');
 });
