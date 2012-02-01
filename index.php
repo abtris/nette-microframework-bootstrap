@@ -24,7 +24,7 @@ $container = $configurator->createContainer();
 
 // Setup router
 // http://website/default
-$container->router[] = new Route('/', function($presenter) {
+$container->router[] = new Route('', function($presenter) {
 
     return $presenter->createTemplate()
         ->setFile(__DIR__ . '/app/default.latte');
